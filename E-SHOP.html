@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon E-Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: url(./Lueur.webp) no-repeat top left / cover;
+}
+
+header {
+    background-color: #33333356;
+    color: #ffffff;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 10px;
+}
+
+header .logo h1 {
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+header .cart a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.products {
+    padding: 2rem;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.Pack {
+    display: grid;
+    width: 50%;
+    gap: 1rem;
+}
+
+.Produits {
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 20px;
+    border: solid black 1px;
+    text-align: center;
+}
+
+.Produits img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.Produits h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    color: #000000;
+}
+
+.Produits .price {
+    font-size: 1.2rem;
+    color: #000000;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.Produits button {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Produits button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #33333362;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Mon E-Shop</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">Produits</a></li>
+                <li><a href="#">À propos</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cart">
+            <a href="#">Panier (0)</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="nav">
+            <h2>Bienvenue sur Mon E-Shop</h2>
+        </section>
+
+        <section class="products">
+            <h2>Nos Produits :</h2>
+            <div class="Pack">
+                <div class="Produits">
+                    <h3>Drapeau Français</h3>
+                    <img src="./Image/Drapeau_France.png" alt="Produit 1">
+                    <p class="price">10€</p>
+                    <button>Ajouter au panier</button>
+                </div>
+                <div class="Produits">
+                    <h3>Drapeau Italien</h3>
+                    <img src="./Image/Drapeau_Italie.png" alt="Produit 2">
+                    <p class="price">10€</p>
+                    <button>Ajouter au panier</button>
+                </div>
+                <div class="Produits">
+                    <h3>Drapeau Allemand</h3>
+                    <img src="./Image/Drapeau_Allemand.png" alt="Produit 1">
+                    <p class="price">10€</p>
+                    <button>Ajouter au panier</button>
+                </div>
+                <div class="Produits">
+                    <h3>Drapeau Belge</h3>
+                    <img src="./Image/Drapeau_France.png" alt="Produit 2">
+                    <p class="price">10€</p>
+                    <button>Ajouter au panier</button>
+                </div>
+                <!-- Ajoutez plus de produits ici -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Mon E-Shop. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
