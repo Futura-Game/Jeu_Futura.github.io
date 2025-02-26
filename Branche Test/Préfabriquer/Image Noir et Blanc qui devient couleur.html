@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image à pointé</title>
+    <link rel="website icon" type="png" href="Image/Icone_CSS.png">
+    <style>
+        body {
+            background-color: black;
+        }
+        img {
+            max-width: 100%;
+            width: 33.3%;
+            transition: .5s ease-in;
+            filter: grayscale(100%);
+        }
+        img:hover {
+            filter: grayscale(0%);
+        }
+        div{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <img src="./Mario Kart Tour.jpg" alt="Mario Kart">
+    <img src="./Mario Kart Tour.jpg" alt="Mario Kart">
+    <img src="./Mario Kart Tour.jpg" alt="Mario Kart">
+    </div>
+</body>
+</html>
