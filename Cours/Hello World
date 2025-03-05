@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Je suis un titre</title>
+    <h1>Bonjour !</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+    <br>Voluptatibus odio quis excepturi dolorum tempora corrupti, dolorem commodi quia laborum explicabo quas aliquam natus eaque asperiores! Voluptatem corporis voluptas aliquam quibusdam?</p>
+        <ol>
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+        </ol>
+    <table>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+        </tr>
+    </table>
+</head>
+<body>
+    <style>
+        body
+        {
+            
+        }
+        h1
+        {
+        color: white;
+        background-color: blue;
+        text-align: center;
+        }
+    </style>
+</body>
