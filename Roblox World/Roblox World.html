@@ -13,22 +13,23 @@
             .Logo {
             width: 150px;
             float: left;
-            margin-left: 20px;
-            margin-top: 5px;
             padding-right: 100px;
+            transition: .5s ease-in;
+            filter: grayscale(100%);
+            }
+            .Logo:hover {
+            filter: grayscale(0%);
             }
             .clear {
             clear: both;
             }           
-            p.Titre {
-            color: white;
+            p.Titre, a {
+            color: rgb(0, 213, 255);
             text-shadow: 0px 0px 10px blue,
             0px 0px 20px blue,
             0px 0px 40px blue,
             0px 0px 80px blue; 
             font-size: 50px;
-            vertical-align: middle;
-            text-align: left;
             } 
             .div_HEADER {
             background-color: rgba(255, 255, 255, 0);
@@ -39,48 +40,22 @@
             }
             img {
             max-width: 100%;
-            width: 40px;
-            transition: .5s ease-in;
-            filter: grayscale(100%);
-            }
-            img:hover {
-            filter: grayscale(0%);
             }
             img.Intro {
-            max-width: 100%;
             width: auto
             }
             nav {
-            border: 3px solid red;
-            box-shadow: 0px 0px 15px red, 0px 0px 15px red inset;
+            border: 3px solid white;
+            box-shadow: 0px 0px 15px white, 0px 0px 15px white inset;
             }
             nav li a:visited {
-            list-style: none;
-            padding-left: 0;
-            padding : 50px;
-            display: inline-block;
-            color: white;
-            }
-            nav li a:focus 
-            {
-            color: red;
+            color: rgb(0, 213, 255);
             }
             nav ul li
             {
-            margin:0 50px; 
-            }
-            a:hover {
-            color: rgba(255, 255, 0, 0);
-            transition: 0.5s ease;
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color: yellow;
-            text-shadow: 0px 0px 10px gold,
-            0px 0px 20px gold,
-            0px 0px 40px gold,
-            0px 0px 80px gold;
+            margin:0 100px;
             }
             ul {
-            list-style: none;
             padding-left: 0;
             text-align: center;
             }
@@ -92,7 +67,6 @@
             {
             font-size: 25px;
             text-decoration: none;
-            color: white;
             }
             b, em {
             color: yellow;
@@ -115,41 +89,40 @@
             }
             .div_PUB {
             box-sizing: border-box;
-            background-color: blue;
+            background-image: url(./Maquette\ pour\ Solde.png);
+            border: 3px solid gold;
+            box-shadow: 0px 0px 15px gold, 0px 0px 15px gold inset;
             }
             p.p_PUB
             {
             text-align: center;           
             color: yellow;
-            text-shadow: 0px 0px 10px gold,
-            0px 0px 20px gold,
-            0px 0px 40px gold,
-            0px 0px 80px gold;
-            border: 3px solid gold;
-            box-shadow: 0px 0px 15px gold, 0px 0px 15px gold inset;
             font-size: 40px;
             }
-            table
-            { 
+            table { 
             margin: auto;
-            border-collapse: collapse; 
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed; /* Colonnes même largeur */
             font-size: 38px;
             text-align: center;
             color: gold;
             }
-            td, th
-            {
+            td, th {
             border: 1px solid blue;
             box-shadow: 0px 0px 5px blue, 0px 0px 5px blue inset;
+            padding: 10px;
+            word-wrap: break-word; /* Pour éviter que le texte déborde */
             }
             caption {
             color: white;
             text-shadow: 0px 0px 10px white,
-            0px 0px 20px white,
-            0px 0px 40px white,
-            0px 0px 80px white;
+                         0px 0px 20px white,
+                         0px 0px 40px white,
+                         0px 0px 80px white;
             font-size: 20px;
             text-align: start;
+            margin-bottom: 10px;
             }
             p.FOOT0, p.FOOT1, p.FOOT2, p.FOOT3 {
             width: 25%;
@@ -178,16 +151,14 @@
     <header>
         <div class="div_HEADER">
             <img class="Logo" src="Icone Roblox.png">
-            <p class="Titre">JORIATTI Thomas</p>
-            <ul>
-                <li><a href="./Roblox Méta.html">ROBLOX META</li>
-            </ul>
+            <p class="Titre">Roblox World</p>
         </div>
             <nav>
                 <ul>
-                    <li><a href="">Accueil 🏠</a></li>
-                    <li><a href="">Jeu Tendance 🔥</a></li>
-                    <li><a href="">Boutique 🛒</a></li>
+                    <li><a href="../index.html">Home 🏠</a></li>
+                    <li><a href="https://www.roblox.com/fr">Téléportation 🔥</a></li>
+                    <li><a href="../RO-SHOP.html">Boutique 🛒</a></li>
+                    <li><a href="./Roblox Méta.html">ROBLOX META</a></li>
                 </ul>
             </nav>
     </header>
@@ -204,44 +175,59 @@
         </div>
         <div class="clear"></div>
         <div class="div_PUB"><p class="p_PUB">-50% SUR LES COSMÉTIQUES 🎉</p></div>
-        <table>
-            <caption>Petite info sur 4 jeu Roblox de thème "Ville"</caption>
+        <table width="100%">
+            <caption>Petite info sur 4 jeux Roblox de thème "Ville"</caption>
             <tr>
-                <th>X</th>
+                <th></th>
                 <th>MAD CITY</th>
                 <th>BLOXBURG</th>
                 <th>BROOKHAVEN</th>
                 <th>ADOPTE ME</th>
             </tr>
             <tr>
-                <th>Nbr visite Totals</th>
-                <th>2,5 BILLIONS</th>
-                <th>9,1 BILLIONS</th>
-                <th>58,9 BILLIONS</th>
-                <th>38,3 BILLIONS</th>
+                <th>Année de Sortie</th>
+                <td>03/12/2017</td>
+                <td>04/11/2014</td>
+                <td>21/04/2020</td>
+                <td>14/07/2017</td>
+            </tr>
+            <tr>
+                <th>Dernière Mise <br> à jour</th>
+                <td>25/03/2025</td>
+                <td>15/05/2025</td>
+                <td>21/05/2025</td>
+                <td>21/05/2025</td>
+            </tr>
+            <tr>
+                <th>Prix d'Accès</th>
+                <td>Gratuit</td>
+                <td>Payant <br> (25 Robux)</td>
+                <td>Gratuit</td>
+                <td>Gratuit</td>
+            </tr>
+            <tr>
+                <th>Nombre de <br> visite Totals</th>
+                <td>2,6 BILLIONS</td>
+                <td>9,3 BILLIONS</td>
+                <td>64,4 BILLIONS</td>
+                <td>39,6 BILLIONS</td>
             </tr>
             <tr>
                 <th>Capacité Max</th>
-                <th>32 Joueurs/Servers</th>
-                <th>12 Joueurs/Servers</th>
-                <th>22 Joueurs/Servers</th>
-                <th>48 Joueurs/Servers</th>52
+                <td>32 Joueurs/Serveur</td>
+                <td>12 Joueurs/Serveur</td>
+                <td>22 Joueurs/Serveur</td>
+                <td>48 Joueurs/Serveur</td>
             </tr>
             <tr>
-                <th>Difficulté du jeu</th>
-                <th>Plutô Simple</th>
-                <th>Tranquile</th>
-                <th>Détente</th>
-                <th>Détente</th>
-            </tr>
-            <tr>
-                <th>Prix Gamepass Totals (Robuxs)</th>
-                <th>3000 Robuxs <br> (30 Euros)</th>
-                <th>2530 Robuxs <br> (25,30 Euros)</th>
-                <th>5278 Robuxs <br> (52,78 Euros)</th>
-                <th>6024 Robuxs <br> (60,24 Euros)</th>
+                <th>Prix Gamepass Totals (Robux)</th>
+                <td>3000 Robux <br> (≈30€)</td>
+                <td>2530 Robux <br> (≈25,30€)</td>
+                <td>5278 Robux <br> (≈52,78€)</td>
+                <td>6024 Robux <br> (≈60,24€)</td>
             </tr>               
-         </table>
+        </table>
+        
         
     </main>
 

@@ -10,21 +10,54 @@
         {
             background-color: black;
         }
-        li a {
+        ul.primo {
+            font-family: "Helvetica", monospace;
+            display: flex;
+            justify-content: space-around;
+            background-color: blue;
+        }
+        ul.primo li {
+            list-style: none;
+        }
+        ul.primo li a {
             font-size: 26px;
+            font-weight: 700;
             text-decoration: none;
             text-transform: uppercase;
-            color: lime;
+            color: rgba(255, 217, 0, 0);
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: rgb(255, 255, 255);
+            padding: 10px;
+            transition: 1s ease;
         }
-        a:hover
-        {
+        ul.primo:hover a:not(:hover) {
+            color: rgb(255, 255, 255);
+            opacity: 0.25;
+            filter: blur(1px);
+        }
+        ul.primo:hover a {
+            color: white;
+        }
+        ul.lien:hover a:not(:hover) {
+            color: rgb(255, 255, 255);
+            opacity: 0.25;
+            filter: blur(1px);
+        }
+        ul.lien:hover a {
             color: white;
         }
     </style>
 </head>
 <body>
-    <ul>
-        <li class="li1"><a href="./CV_JORIATTI_Thomas_MNS_V2.pdf">Télécharger le fichier PDF</a>
+    <ul class="primo">
+        <li><a href="./Branche Test/Mini Test.html">ZONE DE TEST</a></li>
+        <li><a href="./Branche Site Web/Site Web.html">Site Webs</a></li>
+        <li><a href="./Branche Arts/Croquis Art Numérique.html">Croquis Art Numérique</a></li>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./COURS➡️.html">Cours</a></li>
+    </ul>
+    <ul class="lien">
+        <li class="li1"><a href="./CV_JORIATTI_Thomas_MNS_V2.pdf">Télécharger mon CV</a>
         </li>
     </ul>
 </body>

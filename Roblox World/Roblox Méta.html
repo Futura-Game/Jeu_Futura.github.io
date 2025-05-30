@@ -11,90 +11,61 @@
             background-color: black;
             display: block;
             }
-            table.td1 {
-            background-color: rgba(32, 32, 163, 0);
-            border-collapse: collapse;
-            color: rgba(0, 0, 0, 0);
-            }
             .Logo {
             width: 150px;
             float: left;
-            margin-left: 20px;
-            margin-top: 5px;
             padding-right: 100px;
+            transition: .5s ease-in;
+            filter: grayscale(100%);
+            }
+            .Logo:hover {
+            filter: grayscale(0%);
             }
             .clear {
             clear: both;
             }            
-            p.Titre {
-            color: white;
-            text-shadow: 0px 0px 10px magenta,
-            0px 0px 20px magenta,
-            0px 0px 40px magenta,
-            0px 0px 80px magenta; 
+            p.Titre, a {
+            color: yellow;
+            text-shadow: 0px 0px 10px rgb(255, 174, 0),
+            0px 0px 20px rgb(255, 174, 0),
+            0px 0px 40px rgb(255, 174, 0),
+            0px 0px 80px rgb(255, 174, 0); 
             font-size: 50px;
-            vertical-align: middle;
-            text-align: left;
             } 
             .div_HEADER {
             background-color: rgb(0, 0, 0);
             border: solid rgba(0, 0, 0, 0) 1px;
-            }            
+            }
             .div_PUB {
-            text-align: center;
-            color: yellow;
-            text-shadow: 0px 0px 10px gold,
-            0px 0px 20px gold,
-            0px 0px 40px gold,
-            0px 0px 80px gold;
+            box-sizing: border-box;
+            background-image: url(./Maquette\ pour\ Solde.png);
             border: 3px solid gold;
             box-shadow: 0px 0px 15px gold, 0px 0px 15px gold inset;
+            }
+            p.p_PUB
+            {
+            text-align: center;           
+            color: yellow;
             font-size: 40px;
             }
             img {
             max-width: 100%;
-            width: 40px;
-            transition: .5s ease-in;
-            filter: grayscale(100%);
-            }
-            img:hover {
-            filter: grayscale(0%);
             }
             img.Intro {
-            max-width: 100%;
-            width: auto
+            height: auto;
             }
             nav {
-            border: 3px solid red;
-            box-shadow: 0px 0px 15px red, 0px 0px 15px red inset;
+            border: 3px solid white;
+            box-shadow: 0px 0px 15px white, 0px 0px 15px white inset;
             }
             nav li a:visited {
-            list-style: none;
-            padding-left: 0;
-            padding : 50px;
-            display: inline-block;
-            color: white;
-            }
-            a:hover {
-            color: rgba(255, 255, 0, 0);
-            transition: 0.5s ease;
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color: yellow;
-            text-shadow: 0px 0px 10px gold,
-            0px 0px 20px gold,
-            0px 0px 40px gold,
-            0px 0px 80px gold;
-            }
-            nav li a:focus {
-            text-decoration: underline;
-            color: red;
+            color: yellow;
             }
             nav ul li
             {
-            margin:0 50px; 
+            margin:0 100px;
             }
             ul {
-            list-style: none;
             padding-left: 0;
             text-align: center;
             }
@@ -106,13 +77,13 @@
             {
             font-size: 25px;
             text-decoration: none;
-            color: white;
             }
             b, em {
             color: yellow;
             }
             .div_INTRO {
-            background-color: rgb(0, 0, 0);           
+            background-color: rgb(0, 0, 0);
+            width: 75%;         
             }
             .Décor {
             width: 190px;
@@ -124,18 +95,7 @@
             p.Intro {
             color: blue;
             text-align: justify;
-            width: 75%;
             box-sizing: border-box; 
-            }
-            td.td1 {
-            background-color: white;
-            width: 125px;
-            height: 125px;
-            }
-            td.td2 {
-            background-color: rgb(32, 32, 163);
-            width: 125px;
-            height: 125px;
             }
             p.FOOT0, p.FOOT1, p.FOOT2, p.FOOT3 {
             width: 25%;
@@ -164,166 +124,33 @@
     <header>
         <div class="div_HEADER">
             <img class="Logo" src="Icone Roblox.png">
-            <p class="Titre">JORIATTI Thomas</p>
-            <ul>
-                <li><a href="./Roblox World.html">ROBLOX WORLD</a></li>
-            </ul>
+            <p class="Titre">Roblox Meta</p>
         </div>
             <nav>
                 <ul>
-                    <li><a href="">Accueil 🏠</a></li>
-                    <li><a href="">Jeu Tendance 🔥</a></li>
-                    <li><a href="">Boutique 🛒</a></li>
+                    <li><a href="../index.html">Home 🏠</a></li>
+                    <li><a href="https://www.roblox.com/fr">Téléportation 🔥</a></li>
+                    <li><a href="../RO-SHOP.html">Boutique 🛒</a></li>
+                    <li><a href="./Roblox World.html">ROBLOX WORLD</a></li>
                 </ul>
             </nav>
     </header>
 
     <main>
-        <img class="Intro" src="roblox-lead-image-cnnu.jpg">
-        <div class="div_INTRO">
+        <img class="Intro" src="roblox-lead-image-cnnu.jpg">       
             <h2>Qu'est que Roblox Méta ?</h2>
             <h3>En quoi le virtuelle change la façon de jouer ?</h3>
+        <div class="div_INTRO">
             <img class="Décor" src="noFilter.webp">
             <p class="Intro">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti beatae dolore inventore odit nisi aut ipsam sunt minus sequi perspiciatis eligendi earum commodi illum, laboriosam debitis laudantium consectetur. Doloribus ipsa laborum voluptate, molestiae aspernatur unde sint nihil rem quam incidunt quae asperiores quibusdam repellendus nulla. Numquam, ex assumenda cumque dolore dolores blanditiis placeat nisi inventore nesciunt, voluptates dicta in cum sequi.
             Lorem ipsum dolor, <em> amet consectetur adipisicing</em> elit. <b>Deleniti beatae dolore inventore odit nisi</b> aut ipsam sunt minus sequi perspiciatis eligendi earum commodi illum, laboriosam debitis laudantium consectetur. Doloribus ipsa laborum voluptate, molestiae aspernatur unde sint nihil rem quam incidunt quae asperiores quibusdam repellendus nulla. Numquam, ex assumenda cumque dolore dolores blanditiis placeat nisi inventore nesciunt, voluptates dicta in cum sequi.
             Lorem ipsum dolor, <em> amet consectetur adipisicing</em> elit. <b>Deleniti beatae dolore inventore odit nisi</b> aut ipsam sunt minus sequi perspiciatis eligendi earum commodi illum, laboriosam debitis laudantium consectetur. Doloribus ipsa laborum voluptate, molestiae aspernatur unde sint nihil rem quam incidunt quae asperiores quibusdam repellendus nulla. Numquam, ex assumenda cumque dolore dolores blanditiis placeat nisi inventore nesciunt, voluptates dicta in cum sequi.
             Lorem ipsum dolor, <em> amet consectetur adipisicing</em> elit. <b>Deleniti beatae dolore inventore odit nisi</b> ipsam sunt minus sequi perspiciatis eligendi earum commodi illum, laboriosam debitis laudantium consectetur. Doloribus ipsa laborum voluptate, molestiae aspernatur unde sint nihil rem quam incidunt quae asperiores quibusdam repellendus nulla. Numquam, ex assumenda cumque dolore dolores blanditiis placeat nisi inventore nesciunt, voluptates dicta in cum sequi.
-            Lorem ipsum dolor, <em> amet consectetur adipisicing</em> elit. <b>Deleniti beatae dolore inventore odit nisi</b> ipsam sunt minus sequi perspiciatis eligendi earum commodi illum, laboriosam debitis laudantium consectetur. Doloribus ipsa laborum voluptate, molestiae aspernatur unde sint nihil rem quam incidunt quae asperiores quibusdam repellendus nulla. Numquam, ex assumenda cumque dolore dolores blanditiis placeat nisi inventore nesciunt, voluptates dicta in cum sequi.</p>
+            Lorem ipsum dolor, <em> amet consectetur adipisicing</em> elit. <b>Deleniti beatae dolore inventore odit nisi</b> ipsam sunt minus sequi perspiciatis eligendi earum commodi illum, laboriosam debitis laudantium consectetur. Doloribus ipsa laborum voluptate, molestiae aspernatur unde sint nihil rem quam incidunt quae asperiores quibusdam repellendus nulla. Numquam, ex assumenda cumque dolore.</p>
         </div>
-        
         <div class="clear"></div>
-
-        <div class="div_PUB"><p>-75% SUR LES CARTES INTÉRACTIFS 🎉</p></div>
-        
-        <table class="td1">
-            <tr>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td1">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-            </tr>
-            <tr>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td1">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td1">1</td>
-                <td class="td1">1</td>
-                <td class="td1">1</td>
-                <td class="td1">1</td>
-                <td class="td1">1</td>
-                <td class="td1">1</td>
-                <td class="td1">1</td>
-            </tr>
-            <tr>
-                <td class="td1">1</td>
-                <td class="td1">1</td>
-                <td class="td1">1</td>
-                <td class="td1">1</td>
-                <td class="td1">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-            </tr>
-            <tr>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td1">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td1">1</td>
-                <td class="td1">1</td>
-                <td class="td1">1</td>
-                <td class="td1">1</td>
-                <td class="td1">1</td>
-                <td class="td1">1</td>
-                <td class="td1">1</td>
-            </tr>
-            <tr>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td1">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-            </tr>
-            <tr>
-                <td class="td1">1</td>
-                <td class="td1">1</td>
-                <td class="td1">1</td>
-                <td class="td1">1</td>
-                <td class="td1">1</td>
-                <td class="td1">1</td>
-                <td class="td1">1</td>
-                <td class="td1">1</td>
-                <td class="td1">1</td>
-                <td class="td1">1</td>
-                <td class="td1">1</td>
-                <td class="td1">1</td>
-            </tr>
-            <tr>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-            </tr>
-            <tr>
-                <td class="td1">1</td>
-                <td class="td1">1</td>
-                <td class="td1">1</td>
-                <td class="td1">1</td>
-                <td class="td1">1</td>
-                <td class="td1">1</td>
-                <td class="td1">1</td>
-                <td class="td1">1</td>
-                <td class="td1">1</td>
-                <td class="td1">1</td>
-                <td class="td1">1</td>
-                <td class="td1">1</td>
-            </tr>
-            <tr>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-                <td class="td2">1</td>
-            </tr>
-        </table>
-    </main>
+        <div class="div_PUB"><p class="p_PUB">-75% SUR LES CARTES INTÉRACTIFS 🎉</p></div>
+        </main>
     <footer>
         <div>
             <p class="FOOT0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti beatae dolore inventore odit nisi aut ipsam sunt minus sequi perspiciatis eligendi earum commodi illum, laboriosam debitis laudantium consectetur. Doloribus ipsa laborum voluptate, molestiae aspernatur unde sint nihil rem quam incidunt quae asperiores quibusdam repellendus nulla. Numquam, ex assumenda cumque dolore dolores blanditiis placeat nisi inventore nesciunt, voluptates dicta in cum sequi.</p>

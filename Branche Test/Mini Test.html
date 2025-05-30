@@ -10,14 +10,58 @@
         {
             background-color: black;
         }
+        ul.primo {
+            font-family: "Helvetica", monospace;
+            display: flex;
+            justify-content: space-around;
+            background-color: blue;
+        }
+        ul.primo li {
+            list-style: none;
+        }
+        ul.primo li a {
+            font-size: 26px;
+            font-weight: 700;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: rgba(255, 217, 0, 0);
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: rgb(255, 255, 255);
+            padding: 10px;
+            transition: 1s ease;
+        }
+        ul.primo:hover a:not(:hover) {
+            color: rgb(255, 255, 255);
+            opacity: 0.25;
+            filter: blur(1px);
+        }
+        ul.primo:hover a {
+            color: white;
+        }
+        ul.lien:hover a:not(:hover) {
+            color: rgb(255, 255, 255);
+            opacity: 0.25;
+            filter: blur(1px);
+        }
+        ul.lien:hover a {
+            color: white;
+        }
     </style>
 </head>
 <body>
-    <ul>
-        <li class="li1"><a href="../Branche Test/Préfabriquer/Image Noir et Blanc qui devient couleur.html">IMAGE</a></li>
-        <li class="li2"><a href="../Branche Test/Préfabriquer/Du texte néon.html">TEXT</a></li>
-        <li class="li3"><a href="../Branche Test/Préfabriquer/Les cases à cochés.html">CASE INTERACTIF</a></li>
-        <li class="li4"><a href="../Branche Test/Préfabriquer/Div Basique.html">DIV</a></li>
+    <ul class="primo">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../Branche Site Web/Site Web.html">Site Webs</a></li>
+        <li><a href="../Branche Arts/Croquis Art Numérique.html">Croquis Art Numérique</a></li>
+        <li><a href="../Téléchargable.html">Téléchargable</a></li>
+        <li><a href="../COURS➡️.html">Cours</a></li>
+    </ul>
+    <ul class="lien">
+        <li><a href="../Branche Test/Préfabriquer/Image Noir et Blanc qui devient couleur.html">IMAGE</a></li>
+        <li><a href="../Branche Test/Préfabriquer/Du texte néon.html">TEXT</a></li>
+        <li><a href="../Branche Test/Préfabriquer/Les cases à cochés.html">CASE INTERACTIF</a></li>
+        <li><a href="../Branche Test/Préfabriquer/Div Basique.html">DIV</a></li>
+        <li><a href="./Préfabriquer/Tableaux.html">TABLEAU</a></li>
     </ul>
 </body>
 </html>

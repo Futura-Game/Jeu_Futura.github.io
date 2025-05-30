@@ -9,98 +9,60 @@
         body {
             background: url(./Image/Néon2.jpg)
             no-repeat
-        top left / cover;
+            top left / cover;
         }
-        ul {
+        ul.primo {
             font-family: "Helvetica", monospace;
             display: flex;
-            gap: 72px;
+            justify-content: space-around;
+            background-color: blue;
         }
-        li {
+        ul.primo li {
             list-style: none;
         }
-        li a {
+        ul.primo li a {
             font-size: 26px;
             font-weight: 700;
             text-decoration: none;
             text-transform: uppercase;
-            color: rgba(0, 0, 255, 0);
+            color: rgba(255, 217, 0, 0);
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: rgb(255, 255, 255);
             padding: 10px;
-            transition: 0.5s ease;
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color: white;
+            transition: 1s ease;
         }
-        li.li1:hover a {
-            color: rgba(0, 0, 255, 0);
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color: lime;
-            text-shadow: 0px 0px 10px lime,
-            0px 0px 20px lime,
-            0px 0px 40px lime,
-            0px 0px 80px lime; 
-        }
-        li.li2:hover a {
-            color: rgba(255, 217, 0, 0);
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color: gold;
-            text-shadow: 0px 0px 10px gold,
-            0px 0px 20px gold,
-            0px 0px 40px gold,
-            0px 0px 80px gold; 
-        }
-        li.li3:hover a {
-            color: rgba(0, 0, 255, 0);
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color: lime;
-            text-shadow: 0px 0px 10px lime,
-            0px 0px 20px lime,
-            0px 0px 40px lime,
-            0px 0px 80px lime; 
-        }
-        li.li4:hover a {
-            color: rgba(255, 217, 0, 0);
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color: gold;
-            text-shadow: 0px 0px 10px gold,
-            0px 0px 20px gold,
-            0px 0px 40px gold,
-            0px 0px 80px gold; 
-        }
-        li.li5:hover a {
-            color: rgba(0, 0, 255, 0);
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color: lime;
-            text-shadow: 0px 0px 10px lime,
-            0px 0px 20px lime,
-            0px 0px 40px lime,
-            0px 0px 80px lime;  
-        }
-        li:hover a:not(:hover) {
-            color: rgba(0, 0, 255, 0);
-            opacity: 0;
+        ul.primo:hover a:not(:hover) {
+            color: rgb(255, 255, 255);
+            opacity: 0.25;
             filter: blur(1px);
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color: white;
         }
-        li.li6:hover a {
-            color: rgba(255, 217, 0, 0);
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color: gold;
-            text-shadow: 0px 0px 10px gold,
-            0px 0px 20px gold,
-            0px 0px 40px gold,
-            0px 0px 80px gold; 
+        ul.primo:hover a {
+            color: white;
+        }
+        ul.lien:hover a:not(:hover) {
+            color: rgb(255, 255, 255);
+            opacity: 0.25;
+            filter: blur(1px);
+        }
+        ul.lien:hover a {
+            color: white;
         }
     </style>
 </head>
 <body>
-    <ul>
-        <li class="li1"><a href="./Cours/Tableaux.html">TABLEAU</a></li>
-        <li class="li2"><a href="./Cours/Site web DK Final.html">MISE EN PAGE</a></li>
-        <li class="li3"><a href="./Cours/Page DK Photos.html">GALERY DK</a></li>
-        <li class="li4"><a href="./Cours/Page DK Description.html">Description</a></li>
-        <li class="li5"><a href="">???</a></li>
-        <li class="li6"><a href="">???</a></li>
+    <ul class="primo">
+        <li><a href="./Branche Test/Mini Test.html">ZONE DE TEST</a></li>
+        <li><a href="./Branche Site Web/Site Web.html">Site Webs</a></li>
+        <li><a href="./Branche Arts/Croquis Art Numérique.html">Croquis Art Numérique</a></li>
+        <li><a href="./Téléchargable.html">Téléchargable</a></li>
+        <li><a href="./index.html">Home</a></li>
+    </ul>
+    <ul class="lien">
+        <li><a href="./Cours/Site web DK Final.html">MISE EN PAGE</a></li>
+        <li><a href="./Cours/Page DK Photos.html">GALERY DK</a></li>
+        <li><a href="./Cours/Page DK Description.html">Description</a></li>
+        <li><a href="./mexique.gif">???</a></li>
+        <li><a href="./money-animated-gif-4.gif">???</a></li>
     </ul>
 </body>
 </html>
