@@ -6,101 +6,68 @@
     <title>FOOTBALL</title>
     <link rel="website icon" type="png" href="../Ballon-de-foot.png">
     <style>
-        body {
-            background: url(../Image/Foot.webp)
-            no-repeat
-        top left / cover;
+        body
+        {       
+            background-color: black;
         }
-        ul {
-            font-family: "Helvetica", monospace;
-            display: flex;
-            gap: 72px;
+        .parent {
+            display: grid;
+            gap: 10px;
         }
-        li {
-            list-style: none;
+        .Choix {
+            background-image: url(./fond.jpg);
+            border: solid 2px white;
+            border-radius: 20px;
+            height: 150px;
+            display: flex;  
+            justify-content: center; /* centrer horizontalement */
+            align-items: center;     /* centrer verticalement */
+            text-align: center;
+            background-size: cover;      /* Remplit tout le bloc */
+            background-position: center; /* Centre bien l’image */
+            background-repeat: no-repeat;
+            object-fit: cover;
+            opacity: 0.1;
         }
-        li a {
-            font-size: 20px;
-            font-weight: 700;
+        .Choix:hover 
+        {
+            border: 2px solid blue;
+            box-shadow: 0 0 15px 5px blue;
+            opacity: 1;
+        }
+        .parent p {
+            color: white;
             text-decoration: none;
-            text-transform: uppercase;
-            color: rgba(0, 0, 255, 0);
-            padding: 10px;
-            transition: 0.5s ease;
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color: white;
-        }
-        li.li1:hover a {
-            color: rgba(0, 0, 255, 0);
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color: lime;
-            text-shadow: 0px 0px 10px lime,
-            0px 0px 20px lime,
-            0px 0px 40px lime,
-            0px 0px 80px lime; 
-        }
-        li.li2:hover a {
-            color: rgba(255, 217, 0, 0);
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color: gold;
-            text-shadow: 0px 0px 10px gold,
-            0px 0px 20px gold,
-            0px 0px 40px gold,
-            0px 0px 80px gold; 
-        }
-        li.li3:hover a {
-            color: rgba(0, 0, 255, 0);
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color: lime;
-            text-shadow: 0px 0px 10px lime,
-            0px 0px 20px lime,
-            0px 0px 40px lime,
-            0px 0px 80px lime; 
-        }
-        li.li4:hover a {
-            color: rgba(255, 217, 0, 0);
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color: gold;
-            text-shadow: 0px 0px 10px gold,
-            0px 0px 20px gold,
-            0px 0px 40px gold,
-            0px 0px 80px gold; 
-        }
-        li.li5:hover a {
-            color: rgba(0, 0, 255, 0);
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color: lime;
-            text-shadow: 0px 0px 10px lime,
-            0px 0px 20px lime,
-            0px 0px 40px lime,
-            0px 0px 80px lime;  
-        }
-        li:hover a:not(:hover) {
-            color: rgba(0, 0, 255, 0);
-            opacity: 0;
-            filter: blur(1px);
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color: white;
-        }
-        li.li6:hover a {
-            color: rgba(255, 217, 0, 0);
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color: gold;
-            text-shadow: 0px 0px 10px gold,
-            0px 0px 20px gold,
-            0px 0px 40px gold,
-            0px 0px 80px gold; 
+            font-size: 60px;
         }
     </style>
 </head>
 <body>
-    <ul>
-        <li class="li1"><a href="">WORLD CUP 2022</a></li>
-        <li class="li2"><a href="./Site_Personnel/UEFA Euro 2024 Football.html">EURO 2024</a></li>
-        <li class="li3"><a href="">WORLD CUP 2026</a></li>
-        <li class="li4"><a href="">EURO 202X</a></li>
-        <li class="li5"><a href="">WORLD CUP 202X</a></li>
-        <li class="li6"><a href="">EURO 203X</a></li>
-    </ul>
+    <div class="parent">
+        <div class="Choix" id="div0"><p>HOME✅</p></div>
+        <div class="Choix" id="div1"><p>QATAR 2022❌</p></div>
+        <div class="Choix" id="div2"><p>EURO 2024🚧</p></div>
+        <div class="Choix" id="div3"><p>AMÉRICA 2026❌</p></div>
+        <div class="Choix" id="div4"><p>EURO 2028❌</p></div>
+    </div>
 </body>
+<script>
+  const liens = {
+    div0: './Site Web.html',
+    div1: '',
+    div2: './Site_Personnel/UEFA Euro 2024 Football.html',
+    div3: '',
+    div4: '',
+  };
+
+  for (const id in liens) {
+    const div = document.getElementById(id);
+    if (div) {
+      div.style.cursor = 'pointer';
+      div.onclick = () => {
+        window.location.href = liens[id];
+      };
+    }
+  }
+</script>
 </html>

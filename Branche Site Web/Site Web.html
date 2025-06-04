@@ -7,9 +7,9 @@
     <link rel="website icon" type="png" href="../Site Web.webp">
     <style>
         body {
-            background: url(../Image/Néon1.jpg)
-            no-repeat
-        top left / cover;
+            background: url(../Lueur.jpg);
+            background-size: cover;      /* Remplit tout le bloc */
+            background-repeat: no-repeat;
         }
         ul.primo {
             font-family: "Helvetica", monospace;
@@ -47,6 +47,54 @@
         ul.lien:hover a {
             color: white;
         }
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+        }
+        .div1, .div2, .div3, .div4, .div5, .div6 {
+            border: solid 2px white;
+            border-radius: 20px;
+            height: 500px;
+            display: flex;  
+            justify-content: center; /* centrer horizontalement */
+            align-items: center;     /* centrer verticalement */
+            text-align: center;
+            background-size: cover;      /* Remplit tout le bloc */
+            background-position: center; /* Centre bien l’image */
+            background-repeat: no-repeat;
+            opacity: 0.2;
+        }
+        .div1:hover, .div2:hover, .div3:hover, .div4:hover, .div5:hover, .div6:hover 
+        {
+            border: 2px solid blue;
+            box-shadow: 0 0 15px 5px blue;
+            opacity: 1;
+        }
+        .div1 {
+            background-image: url(./Onde.jpg);
+        }
+        .div2 {
+            background-image: url(./Icone\ Roblox.png);
+        }
+        .div3 {
+            background-image: url(./Ballontech.png);
+        }
+        .div4 {
+            background-image: url(./Onde.jpg);
+        }
+        .div5 {
+            background-image: url(./video_preview_0000.webp);
+        }
+        .div6 {
+            background-image: url(./Music.webp);
+        }
+        .parent p {
+            color: white;
+            text-decoration: none;
+            font-size: 60px;
+        }
     </style>
 </head>
 <body>
@@ -55,15 +103,35 @@
         <li><a href="../index.html">Home</a></li>
         <li><a href="../Branche Arts/Croquis Art Numérique.html">Croquis Art Numérique</a></li>
         <li><a href="../Téléchargable.html">Téléchargable</a></li>
-        <li><a href="../COURS➡️.html">Cours</a></li>
+        <li><a href="">Autre</a></li>
     </ul>
-    <ul class="lien">
-        <li><a href="../Branche Site Web/Divers.html">DIVERS</a></li>
-        <li><a href="../Roblox World/Roblox World.html">ROBLOX WORLD</a></li>
-        <li><a href="../Branche Site Web/Foot.html">FOOT</a></li>
-        <li><a href="../Branche Site Web/Évenement.html">ÉVENEMENT</a></li>
-        <li><a href="https://www.youtube.com/@Futura_Game">???</a></li>
-        <li><a href="../never get you up.gif">???</a></li>
-    </ul>
+    <div class="parent">
+        <div class="div1" id="div1"><p>DIVERS</p></div>
+        <div class="div2" id="div2"><p>ROBLOX WORLD</p></div>
+        <div class="div3" id="div3"><p>FOOT</p></div>
+        <div class="div4" id="div4"><p>ÉVENEMENT</p></div>
+        <div class="div5" id="div5"><p>MA CHAINE YOUTUBE</p></div>
+        <div class="div6" id="div6"><p>NEVER GONNA GIVE YOU UP</p></div>
+    </div>
 </body>
+<script>
+  const liens = {
+    div1: '../Branche Site Web/Divers.html',
+    div2: '../Roblox World/Roblox World.html',
+    div3: '../Branche Site Web/Foot.html',
+    div4: '../Branche Site Web/Évenement.html',
+    div5: '../Branche Site Web/Youtube/YoutubePerso.html',
+    div6: '../never get you up.gif'
+  };
+
+  for (const id in liens) {
+    const div = document.getElementById(id);
+    if (div) {
+      div.style.cursor = 'pointer';
+      div.onclick = () => {
+        window.location.href = liens[id];
+      };
+    }
+  }
+</script>
 </html>

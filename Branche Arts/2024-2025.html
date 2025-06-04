@@ -5,14 +5,18 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
         <style>
-            h1
-            {
-                color: rgb(255, 255, 255);
-                font-size: 40px;
-                font-family: "Arial Black";
-                text-decoration: none;
-                text-align: center;
-            }
+            :root {
+  --accent-color: blue;
+}
+
+h1 {
+  color: var(--accent-color);
+  text-shadow: 0 0 25px var(--accent-color);
+  font-size: 40px;
+  font-family: "Arial Black";
+  text-decoration: none;
+  text-align: center;
+}
             body
             {
             background-color: black;
@@ -23,34 +27,41 @@
                 width: 300px;
                 height: 300px;
                 object-fit: cover;
+                opacity: 0.1;
+            }
+            img:hover 
+            {
+                border: 2px solid blue;
+                box-shadow: 0 0 15px 5px blue;
+                opacity: 1;
             }
         </style>
 </head>
 <body>
     <h1>Exemple de croquis :</h1>
-    <div>
+    <div class="galerie">
     <a href="../Image/2024-2025/Redverse.png"><img src="../Image/2024-2025/Redverse.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
     <a href="../Image/2024-2025/OSTitre.png"><img src="../Image/2024-2025/OSTitre.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
     <a href="../Image/2024-2025/Apia-campagne.png"><img src="../Image/2024-2025/Apia-campagne.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>   
     <a href="../Image/2024-2025/Mexisun.png"><img src="../Image/2024-2025/Mexisun.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
     <a href="../Image/2024-2025/OOOO.png"><img src="../Image/2024-2025/OOOO.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    </div><div>    
+    </div><div class="galerie">    
+    <a href="../Image/2024-2025/Banière-2024.png"><img src="../Image/2024-2025/Banière-2024.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
     <a href="../Image/2024-2025/CMJN.png"><img src="../Image/2024-2025/CMJN.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
     <a href="../Image/2024-2025/RGB.png"><img src="../Image/2024-2025/RGB.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    <a href="../Image/2024-2025/France.png"><img src="../Image/2024-2025/France.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    <a href="../Image/2024-2025/IA1.png"><img src="../Image/2024-2025/IA1.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
+    <a href="../Image/2024-2025/Géo.png"><img src="../Image/2024-2025/Géo.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
     <a href="../Image/2024-2025/Art-1.png"><img src="../Image/2024-2025/Art-1.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    </div><div>    
+    </div><div class="galerie">    
     <a href="../Image/2024-2025/Plateau de jeu.png"><img src="../Image/2024-2025/Plateau de jeu.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    <a href="../Image/2024-2025/L'aventure de Mario.png"><img src="../Image/2024-2025/L'aventure de Mario.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    <a href="../Image/2024-2025/Laser.png"><img src="../Image/2024-2025/Laser.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    <a href="../Image/2024-2025/Redstar2.png"><img src="../Image/2024-2025/Redstar2.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
+    <a href="../Image/2024-2025/France.png"><img src="../Image/2024-2025/France.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
+    <a href="../Image/2024-2025/Laser.png"><img src="../Image/2024-2025/Laser.png" style="filter: brightness(4);" alt="Image" title="Cliquez pour agrandir ^^" /></a>
+    <a href="../Image/2024-2025/Redstar2.png"><img src="../Image/2024-2025/Redstar2.png" style="filter: brightness(4);" alt="Image" title="Cliquez pour agrandir ^^" /></a>
     <a href="../Image/2024-2025/Newsalce.png"><img src="../Image/2024-2025/Newsalce.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    </div><div>    
+    </div><div class="galerie">    
     <a href="../Image/2024-2025/Art-2.png"><img src="../Image/2024-2025/Art-2.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
     <a href="../Image/2024-2025/Exapia.png"><img src="../Image/2024-2025/Exapia.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    <a href="../Image/2024-2025/fleur.png"><img src="../Image/2024-2025/fleur.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    <a href="../Image/2024-2025/La-brigade-obscure.png"><img src="../Image/2024-2025/La-brigade-obscure.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
+    <a href="../Image/2024-2025/fleur.png"><img src="../Image/2024-2025/fleur.png" alt="Image" title="Cliquez pour agrandir ^^" /></a> 
+    <a href="../Image/2024-2025/IA1.png"><img src="../Image/2024-2025/IA1.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
     <a href="../Image/2024-2025/SD.png"><img src="../Image/2024-2025/SD.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
     </div>
 </body>

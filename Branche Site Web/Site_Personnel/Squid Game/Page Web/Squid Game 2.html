@@ -8,19 +8,34 @@
     <style>
         body
         {
-            background-color: black;
+            background-image: url(../Image/squid-game-back.webp);
+            background-size: cover;      /* Remplit tout le bloc */
+            background-repeat: no-repeat;
         }
-        h1
-        {
-        font-size: 40px;
-        text-align: center;
-        color: red;
-        background-color: rgba(0, 0, 0, 0);
-        border-radius: 10px;
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 0;
+        }
+        .conteneur {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* pleine hauteur */
+        }
+        h1 {
+            text-align: center;
+            font-size: 50px;
         }
     </style>
 </head>
 <body>
-    <h1> SQUID GAME 2</h1>
+  <div class="conteneur" style="position: relative; z-index: 1;">
+    <h1 style="color: white;">⚠️Vous avez couru trop vite au feu rouge. Le site s’est éteint.</h1>
+  </div>
 </body>
 </html>

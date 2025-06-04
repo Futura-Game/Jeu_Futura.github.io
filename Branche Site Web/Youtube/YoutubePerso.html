@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MA PAGE YOUTUBE</title>
+    <link rel="website icon" type="png" href="./Logo-YouTube-rouge.png">
+    <style>
+        body {
+            background-color: black;
+        }
+        h1 {
+            color: blue;
+            text-shadow: 0 0 25px blue;
+            font-size: 20px;
+            font-family: "Arial Black";
+            text-decoration: none;
+            text-align: center;
+        }
+        button {
+            background-color: black;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            text-shadow: 0 0 25px blue;
+        }
+        button a {
+            color: blue;
+            font-size: 20px;
+            font-family: "Arial Black";
+            text-decoration: none;
+        }
+        button:hover {
+            box-shadow: 0 0 10px blue;
+        }
+        .Video:hover {
+            border: 2px solid blue;
+            box-shadow: 0 0 15px 5px blue;
+            opacity: 1;
+        }
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .Video {
+            border: solid 2px white;
+            border-radius: 20px;
+            height: 500px;
+            display: flex;  
+            justify-content: center; /* centrer horizontalement */
+            align-items: center;     /* centrer verticalement */
+            text-align: center;
+            background-size: cover;      /* Remplit tout le bloc */
+            background-position: center; /* Centre bien l’image */
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div class="accroche"><h1>Exemples de vidéos :<button><a href="../Site Web.html">Retour</a></button></h1></div>
+    <div class="parent">
+        <div class="Video">
+        <iframe 
+            width="100%" 
+            height="100%" 
+            src="https://www.youtube.com/embed/47wxymSpR3Y"
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen
+            style="border-radius: 20px; overflow: hidden;">
+        </iframe>
+        </div>
+        <div class="Video">
+        <iframe 
+            width="100%" 
+            height="100%" 
+            src="https://www.youtube.com/embed/9M-vYTB90CE"
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen
+            style="border-radius: 20px; overflow: hidden;">
+        </iframe>
+        </div>
+        <div class="Video">
+        <iframe 
+            width="100%" 
+            height="100%" 
+            src="https://www.youtube.com/embed/vL-yGjK_s2E"
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen
+            style="border-radius: 20px; overflow: hidden;">
+        </iframe>
+        </div>
+        <div class="Video">
+        <iframe 
+            width="100%" 
+            height="100%" 
+            src="https://www.youtube.com/embed/_CvRlyCnz_4"
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen
+            style="border-radius: 20px; overflow: hidden;">
+        </iframe>
+        </div>
+        <div class="Video">
+        <iframe 
+            width="100%" 
+            height="100%" 
+            src="https://www.youtube.com/embed/yZywvyB1POA"
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen
+            style="border-radius: 20px; overflow: hidden;">
+        </iframe>
+        </div>
+        <div class="Video">
+        <iframe 
+            width="100%" 
+            height="100%" 
+            src="https://www.youtube.com/embed/sIcxX1fBqS0"
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen
+            style="border-radius: 20px; overflow: hidden;">
+        </iframe>
+        </div>
+        <div class="Video">
+        <iframe 
+            width="100%" 
+            height="100%" 
+            src="https://www.youtube.com/embed/jV5N-tDQgQc"
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen
+            style="border-radius: 20px; overflow: hidden;">
+        </iframe>
+        </div>
+        <div class="Video">
+        <iframe 
+            width="100%" 
+            height="100%" 
+            src="https://www.youtube.com/embed/F2PZQzCrGew"
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen
+            style="border-radius: 20px; overflow: hidden;">
+        </iframe>
+        </div>
+        <div class="Video">
+        <iframe 
+            width="100%" 
+            height="100%" 
+            src="https://www.youtube.com/embed/K9IrSpevSn8"
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen
+            style="border-radius: 20px; overflow: hidden;">
+        </iframe>
+        </div>
+    </div>
+</body>
+<script>
+  const liens = {
+  };
+
+  for (const id in liens) {
+    const div = document.getElementById(id);
+    if (div) {
+      div.style.cursor = 'pointer';
+      div.onclick = () => {
+        window.location.href = liens[id];
+      };
+    }
+  }
+</script>
+</html>

@@ -7,7 +7,9 @@
     <link rel="website icon" type="png" href="./Art numérique.png">
     <style>
         body {
-            background-color: black;
+            background: url(../Lueur.jpg);
+            background-size: cover;      /* Remplit tout le bloc */
+            background-repeat: no-repeat;
         }
         ul.primo {
             font-family: "Helvetica", monospace;
@@ -51,23 +53,31 @@
             grid-template-rows: repeat(2, 1fr);
             gap: 10px;
         }
-        .div1, .div2, .div3, .div4, .div5, .div6 {
-            border: solid 2px rgba(255, 255, 255, 0);
+        .Choix {
+            background-image: url(./blueSquare.png);
+            border: solid 2px white;
             border-radius: 20px;
             height: 500px;
             display: flex;  
             justify-content: center; /* centrer horizontalement */
             align-items: center;     /* centrer verticalement */
             text-align: center;
-            background-image: url(./blueSquare.png);
             background-size: cover;      /* Remplit tout le bloc */
             background-position: center; /* Centre bien l’image */
             background-repeat: no-repeat;
+            object-fit: cover;
+            opacity: 0.2;
+        }
+        .Choix:hover 
+        {
+            border: 2px solid blue;
+            box-shadow: 0 0 15px 5px blue;
+            opacity: 1;
         }
         .parent p {
             color: white;
             text-decoration: none;
-            font-size: 100px;
+            font-size: 60px;
         }
     </style>
 </head>
@@ -77,16 +87,16 @@
         <li><a href="../Branche Site Web/Site Web.html">Site Webs</a></li>
         <li><a href="../index.html">Home</a></li>
         <li><a href="../Téléchargable.html">Téléchargable</a></li>
-        <li><a href="../COURS➡️.html">Cours</a></li>
+        <li><a href="">Autre</a></li>
     </ul>
 
     <div class="parent">
-        <div class="div1" id="div1"><p>2021-2022</p></div>
-        <div class="div2" id="div2"><p>2022-2023</p></div>
-        <div class="div3" id="div3"><p>2023-2024</p></div>
-        <div class="div4" id="div4"><p>2024-2025</p></div>
-        <div class="div5" id="div5"><p>Logo + 3D</p></div>
-        <div class="div6" id="div6"><p>Personnel</p></div>
+        <div class="Choix" id="div1"><p>2021-2022</p></div>
+        <div class="Choix" id="div2"><p>2022-2023</p></div>
+        <div class="Choix" id="div3"><p>2023-2024</p></div>
+        <div class="Choix" id="div4"><p>2024-2025</p></div>
+        <div class="Choix" id="div5"><p>Logo + 3D</p></div>
+        <div class="Choix" id="div6"><p>Personnel</p></div>
     </div>
 </body>
 <script>
@@ -109,6 +119,4 @@
     }
   }
 </script>
-
-
 </html>

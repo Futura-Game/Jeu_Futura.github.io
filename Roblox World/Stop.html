@@ -4,17 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPAM ALERTE</title>
+    <link rel="website icon" type="png" href="./STOP.png">
 </head>
 <body>
     <h1>CESSER DE CLIQUER SUR CE BOUTON !</h1>
-    <p>Cliquer sur ce bouton pour revenir à la boutique ➡️ <button><a href="../RO-SHOP.html">Boutique</a></button></p>
+    <p>Cliquer sur ce bouton pour revenir à la boutique ➡️ <button><a href="./RO-SHOP.html">Boutique</a></button></p>
     <style>
         body {
-        background-color: black;    
+            background-image: url(./gendarmesemarie_1_heureh1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;   
+        }
+        body::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 0;
         }
         h1, p {
-        color: white;
-        text-align: center;
+            color: white;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        p {
+            font-size: 20px;
+        }
+        a {           
+            color: white;
+            text-decoration: none;
+        }
+        button {
+            background-color: black;
+            border: solid 2px white;
         }
     </style>
 </body>
