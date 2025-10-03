@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="png" href="./DK.png">
+    <title>GALERY</title>
+    <style>
+        body {
+            background-color: rgb(0, 0, 0);
+        }
+        ul.primo {
+            font-family: "Helvetica", monospace;
+            display: flex;
+            justify-content: space-around;
+            background-color: gold;
+        }
+        ul.primo li {
+            list-style: none;
+        }
+        ul.primo li a {            
+            color: rgba(255, 217, 0, 0);
+            font-size: 26px;
+            font-weight: 700;
+            text-decoration: none;
+            text-transform: uppercase;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: rgb(0, 0, 0);
+            padding: 10px;
+            transition: 1s ease;
+        }
+        ul.primo:hover a:not(:hover) {
+            color: rgb(255, 255, 255);
+            opacity: 0.25;
+            filter: blur(1px);
+        }
+        ul.primo:hover a {
+            color: rgb(0, 0, 0);
+        }
+        main > div:not(.clear) {
+            float: left;
+            width: 25%;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        main {
+            max-width: 1500px;
+            margin: auto;
+        }
+        div.Image {
+            color: gold;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 20px;
+            border: solid 2px gold;
+        }
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul class="primo">
+            <li><a href="./Site web DK Final.html">Accueil</a></li>
+            <li><a href="../../Branche Site Web/Site.html">HOME</a></li>
+            <li><a href="./Page DK Description.html">Description</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class= "Image">
+            <p class= "p1">DK Country Return (M1 : Jungle)</p>
+            <img src="./Image_DK/DK1.png">            
+        </div>
+        <div class= "Image">
+            <p class= "p2">DK Country Return (M2 : Plage)</p>
+            <img src="./Image_DK/DK2.jpeg">            
+        </div>
+        <div class= "Image">
+            <p class= "p3">DK Country Return (M3 : Ruine)</p>
+            <img src="./Image_DK/DK3.jpeg">            
+        </div>
+        <div class= "Image">
+            <p class= "p4">DK Country Return (M4 : Caverne)</p>
+            <img src="./Image_DK/DK4.jpeg">            
+        </div>
+        <div class="clear"></div>
+        <div class= "Image">
+            <p class= "p5">DK Country Return (M5 : Forêt)</p>
+            <img src="./Image_DK/DK5.jpg">
+        </div>
+        <div class= "Image">
+            <p class= "p6">DK Country Return (M6 : Jurasique)</p>
+            <img src="./Image_DK/DK6.jpg">            
+        </div>
+        <div class= "Image">
+            <p class= "p7">DK Country Return (M7 : Usine)</p>
+            <img src="./Image_DK/DK7.jpg">            
+        </div>
+        <div class= "Image">
+            <p class= "p8">DK Country Return (M8 : Volcan)</p>
+            <img src="./Image_DK/DK8.png">
+        </div>
+        <div class="clear"></div>
+    </main>
+    <footer>
+    </footer>
+    
+    
+</body>
+</html>

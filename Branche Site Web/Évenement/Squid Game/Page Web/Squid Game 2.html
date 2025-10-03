@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squid Game 2</title>
+    <link rel="website icon" type="png" href="../Site_Personnel/Image/Squid Game 2.png">
+    <style>
+        body
+        {
+            background-image: url(../Image/squid-game-back.webp);
+            background-size: cover;      /* Remplit tout le bloc */
+            background-repeat: no-repeat;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 0;
+        }
+        .conteneur {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* pleine hauteur */
+        }
+        h1 {
+            text-align: center;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+  <div class="conteneur" style="position: relative; z-index: 1;">
+    <h1 style="color: white;">⚠️Vous avez couru trop vite au feu rouge. Le site s’est éteint.</h1>
+  </div>
+</body>
+</html>

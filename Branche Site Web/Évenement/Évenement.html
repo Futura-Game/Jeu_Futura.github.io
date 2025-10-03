@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ÉVENEMENT</title>
+    <link rel="website icon" type="png" href="../Evenement.png">
+    <style>
+        body
+        {       
+            background-color: black;
+        }
+        .parent {
+            display: grid;
+            gap: 10px;
+        }
+        .Choix {
+            background-image: url(./fond.jpg);
+            border: solid 2px white;
+            border-radius: 20px;
+            height: 150px;
+            display: flex;  
+            justify-content: center; /* centrer horizontalement */
+            align-items: center;     /* centrer verticalement */
+            text-align: center;
+            background-size: cover;      /* Remplit tout le bloc */
+            background-position: center; /* Centre bien l’image */
+            background-repeat: no-repeat;
+            object-fit: cover;
+            opacity: 0.1;
+        }
+        .Choix:hover 
+        {
+            border: 2px solid blue;
+            box-shadow: 0 0 15px 5px blue;
+            opacity: 1;
+        }
+        .parent p {
+            color: white;
+            text-decoration: none;
+            font-size: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="Choix" id="div0"><p>HOME✅</p></div>
+        <div class="Choix" id="div1"><p>Race Party/Derby Arena🚧</p></div>
+        <div class="Choix" id="div2"><p>Méga Board Game🚧</p></div>
+        <div class="Choix" id="div3"><p>Obby of Hell🚧</p></div>
+        <div class="Choix" id="div4"><p>SQUID GAME🚧</p></div>
+    </div>
+</body>
+<script>
+  const liens = {
+    div0: '../Site.html',
+    div1: './Race Party and Derby Arena.html',
+    div2: './Méga Board Game.html',
+    div3: './Obby of Hell.html',
+    div4: './Squid Game/Page Web/Squid Game.html',
+  };
+
+  for (const id in liens) {
+    const div = document.getElementById(id);
+    if (div) {
+      div.style.cursor = 'pointer';
+      div.onclick = () => {
+        window.location.href = liens[id];
+      };
+    }
+  }
+</script>
+</html>
