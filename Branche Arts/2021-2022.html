@@ -50,33 +50,74 @@
                 box-shadow: 0 0 15px 5px blue;
                 opacity: 1;
             }
+            ul.lien-barre {
+                font-family: "Helvetica", monospace;
+                display: flex;
+                justify-content: space-around;
+                background-color: blue;
+            }
+            ul.lien-barre li {
+                list-style: none;
+            }
+            ul.lien-barre li a {            
+                color: rgba(0, 0, 0, 0);
+                font-size: 26px;
+                font-weight: 700;
+                text-decoration: none;
+                text-transform: uppercase;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: rgb(255, 255, 255);
+                padding: 10px;
+                transition: 1s ease;
+            }
+            ul.lien-barre:hover a:not(:hover) {
+                color: rgb(255, 255, 255);
+                opacity: 0.25;
+                filter: blur(1px);
+            }
+            ul.lien-barre:hover a {
+                color: white;
+            }
         </style>
 </head>
 <body>
-    <h1>Exemple de croquis :<button><a href="../Branche Arts/Design.html">Retour</a></button></h1>
-    <div>
-    <a href="../Branche Arts/2021-2022/Factory glitshed 1_page-0001.jpg"><img src="../Branche Arts/2021-2022/Factory glitshed 1_page-0001.jpg" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    <a href="../Branche Arts/2021-2022/^^.jpg"><img src="../Branche Arts/2021-2022/^^.jpg" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    <a href="../Branche Arts/2021-2022/Coffre Rethro.jpg"><img src="../Branche Arts/2021-2022/Coffre Rethro.jpg" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    <a href="../Branche Arts/2021-2022/CROQUI 1 Le drapeau lunaire_page-0001.jpg"><img src="../Branche Arts/2021-2022/CROQUI 1 Le drapeau lunaire_page-0001.jpg" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    <a href="../Branche Arts/2021-2022/CROQUI 2 Le drapeau solaire (V2)_page-0001.jpg"><img src="../Branche Arts/2021-2022/CROQUI 2 Le drapeau solaire (V2)_page-0001.jpg" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    </div><div>    
-    <a href="../Branche Arts/2021-2022/Fleur Spacial.jpg"><img src="../Branche Arts/2021-2022/Fleur Spacial.jpg" alt="Image" title="Cliquez pour agrandir ^^" /></a>    
-    <a href="../Branche Arts/2021-2022/space journey.png"><img src="../Branche Arts/2021-2022/space journey.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>    
-    <a href="../Branche Arts/2021-2022/Lune Argent-Or.jpg"><img src="../Branche Arts/2021-2022/Lune Argent-Or.jpg" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    <a href="../Branche Arts/2021-2022/Metz toi au vert v2.png"><img src="../Branche Arts/2021-2022/Metz toi au vert v2.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    <a href="../Branche Arts/2021-2022/Metz VS Paris.png"><img src="../Branche Arts/2021-2022/Metz VS Paris.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    </div><div>    
-    <a href="../Branche Arts/2021-2022/Portal_page-0001.jpg"><img src="../Branche Arts/2021-2022/Portal_page-0001.jpg" alt="Image" title="Cliquez pour agrandir ^^" /></a>    
-    <a href="../Branche Arts/2021-2022/soleil et vague.jpg"><img src="../Branche Arts/2021-2022/soleil et vague.jpg" alt="Image" title="Cliquez pour agrandir ^^" /></a>    
-    <a href="../Branche Arts/2021-2022/harry de mort.png"><img src="../Branche Arts/2021-2022/harry de mort.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    <a href="../Branche Arts/2021-2022/squeez de mort.png"><img src="../Branche Arts/2021-2022/squeez de mort.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    <a href="../Branche Arts/2021-2022/Vordeman.png"><img src="../Branche Arts/2021-2022/Vordeman.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    </div><div>    
-    <a href="../Branche Arts/2021-2022/Géométrie Noir et Blanc.jpg"><img src="../Branche Arts/2021-2022/Géométrie Noir et Blanc.jpg" alt="Image" title="Cliquez pour agrandir ^^" /></a>    
-    <a href="../Branche Arts/2021-2022/Hawkings (Stranger-Things).jpg"><img src="../Branche Arts/2021-2022/Hawkings (Stranger-Things).jpg" alt="Image" title="Cliquez pour agrandir ^^" /></a>    
-    <a href="../Branche Arts/2021-2022/Pacman 2.jpg"><img src="../Branche Arts/2021-2022/Pacman 2.jpg" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    <a href="../Branche Arts/2021-2022/Plan mystère.jpg"><img src="../Branche Arts/2021-2022/Plan mystère.jpg" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    <a href="../Branche Arts/2021-2022/Vortogone.jpg"><img src="../Branche Arts/2021-2022/Vortogone.jpg" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    </div>
+    <header>
+        <ul class="lien-barre">
+            <li><a href="./2021-2022.html">2021-2022</a></li>
+            <li><a href="./2022-2023.html">2022-2023</a></li>
+            <li><a href="./2023-2024.html">2023-2024</a></li>
+            <li><a href="./2024-2025.html">2024-2025</a></li>
+            <li><a href="./Personelle.html">Personelle</a></li>
+            <li><a href="./Logo + 3D.html">Logo + 3D</a></li>
+            <li><a href="../index.html">Retour</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <div>
+        <a href="../Branche Arts/2021-2022/Factory glitshed 1_page-0001.jpg"><img src="../Branche Arts/2021-2022/Factory glitshed 1_page-0001.jpg" alt="Image" title="Cliquez pour agrandir ^^" /></a>
+        <a href="../Branche Arts/2021-2022/^^.jpg"><img src="../Branche Arts/2021-2022/^^.jpg" alt="Image" title="Cliquez pour agrandir ^^" /></a>
+        <a href="../Branche Arts/2021-2022/Coffre Rethro.jpg"><img src="../Branche Arts/2021-2022/Coffre Rethro.jpg" alt="Image" title="Cliquez pour agrandir ^^" /></a>
+        <a href="../Branche Arts/2021-2022/CROQUI 1 Le drapeau lunaire_page-0001.jpg"><img src="../Branche Arts/2021-2022/CROQUI 1 Le drapeau lunaire_page-0001.jpg" alt="Image" title="Cliquez pour agrandir ^^" /></a>
+        <a href="../Branche Arts/2021-2022/CROQUI 2 Le drapeau solaire (V2)_page-0001.jpg"><img src="../Branche Arts/2021-2022/CROQUI 2 Le drapeau solaire (V2)_page-0001.jpg" alt="Image" title="Cliquez pour agrandir ^^" /></a>
+        </div><div>    
+        <a href="../Branche Arts/2021-2022/Fleur Spacial.jpg"><img src="../Branche Arts/2021-2022/Fleur Spacial.jpg" alt="Image" title="Cliquez pour agrandir ^^" /></a>    
+        <a href="../Branche Arts/2021-2022/space journey.png"><img src="../Branche Arts/2021-2022/space journey.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>    
+        <a href="../Branche Arts/2021-2022/Lune Argent-Or.jpg"><img src="../Branche Arts/2021-2022/Lune Argent-Or.jpg" alt="Image" title="Cliquez pour agrandir ^^" /></a>
+        <a href="../Branche Arts/2021-2022/Metz toi au vert v2.png"><img src="../Branche Arts/2021-2022/Metz toi au vert v2.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
+        <a href="../Branche Arts/2021-2022/Metz VS Paris.png"><img src="../Branche Arts/2021-2022/Metz VS Paris.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
+        </div><div>    
+        <a href="../Branche Arts/2021-2022/Portal_page-0001.jpg"><img src="../Branche Arts/2021-2022/Portal_page-0001.jpg" alt="Image" title="Cliquez pour agrandir ^^" /></a>    
+        <a href="../Branche Arts/2021-2022/soleil et vague.jpg"><img src="../Branche Arts/2021-2022/soleil et vague.jpg" alt="Image" title="Cliquez pour agrandir ^^" /></a>    
+        <a href="../Branche Arts/2021-2022/harry de mort.png"><img src="../Branche Arts/2021-2022/harry de mort.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
+        <a href="../Branche Arts/2021-2022/squeez de mort.png"><img src="../Branche Arts/2021-2022/squeez de mort.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
+        <a href="../Branche Arts/2021-2022/Vordeman.png"><img src="../Branche Arts/2021-2022/Vordeman.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
+        </div><div>    
+        <a href="../Branche Arts/2021-2022/Géométrie Noir et Blanc.jpg"><img src="../Branche Arts/2021-2022/Géométrie Noir et Blanc.jpg" alt="Image" title="Cliquez pour agrandir ^^" /></a>    
+        <a href="../Branche Arts/2021-2022/Hawkings (Stranger-Things).jpg"><img src="../Branche Arts/2021-2022/Hawkings (Stranger-Things).jpg" alt="Image" title="Cliquez pour agrandir ^^" /></a>    
+        <a href="../Branche Arts/2021-2022/Pacman 2.jpg"><img src="../Branche Arts/2021-2022/Pacman 2.jpg" alt="Image" title="Cliquez pour agrandir ^^" /></a>
+        <a href="../Branche Arts/2021-2022/Plan mystère.jpg"><img src="../Branche Arts/2021-2022/Plan mystère.jpg" alt="Image" title="Cliquez pour agrandir ^^" /></a>
+        <a href="../Branche Arts/2021-2022/Vortogone.jpg"><img src="../Branche Arts/2021-2022/Vortogone.jpg" alt="Image" title="Cliquez pour agrandir ^^" /></a>
+        </div>
+    </main>
 </body>

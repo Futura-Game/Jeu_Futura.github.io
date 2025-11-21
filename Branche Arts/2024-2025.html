@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html>
-<title>2023-2024</title>
+<title>2021-2022</title>
 <link rel="website icon" type="png" href="./blueSquare.png">
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
         <style>
-            :root {
-  --accent-color: blue;
-}
-
-h1 {
-  color: var(--accent-color);
-  text-shadow: 0 0 25px var(--accent-color);
-  font-size: 40px;
-  font-family: "Arial Black";
-  text-decoration: none;
-  text-align: center;
-}
+            h1
+            {
+                color: blue;
+                text-shadow: 0 0 25px blue;
+                font-size: 40px;
+                font-family: "Arial Black";
+                text-decoration: none;
+                text-align: center;
+            }
             button {
                 background-color: black;
                 border: none;
@@ -34,7 +31,7 @@ h1 {
             }
             button:hover {
                 box-shadow: 0 0 10px blue;
-            }
+            }            
             body
             {
             background-color: black;
@@ -53,33 +50,74 @@ h1 {
                 box-shadow: 0 0 15px 5px blue;
                 opacity: 1;
             }
+            ul.lien-barre {
+                font-family: "Helvetica", monospace;
+                display: flex;
+                justify-content: space-around;
+                background-color: blue;
+            }
+            ul.lien-barre li {
+                list-style: none;
+            }
+            ul.lien-barre li a {            
+                color: rgba(0, 0, 0, 0);
+                font-size: 26px;
+                font-weight: 700;
+                text-decoration: none;
+                text-transform: uppercase;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: rgb(255, 255, 255);
+                padding: 10px;
+                transition: 1s ease;
+            }
+            ul.lien-barre:hover a:not(:hover) {
+                color: rgb(255, 255, 255);
+                opacity: 0.25;
+                filter: blur(1px);
+            }
+            ul.lien-barre:hover a {
+                color: white;
+            }
         </style>
 </head>
 <body>
-    <h1>Exemple de croquis :<button><a href="../Branche Arts/Design.html">Retour</a></button></h1>
-    <div class="galerie">
-    <a href="../Branche Arts/2024-2025/Redverse.png"><img src="../Branche Arts/2024-2025/Redverse.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    <a href="../Branche Arts/2024-2025/OSTitre.png"><img src="../Branche Arts/2024-2025/OSTitre.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    <a href="../Branche Arts/2024-2025/GTA5.png"><img src="../Branche Arts/2024-2025/GTA5.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>   
-    <a href="../Branche Arts/2024-2025/Apia-campagne.png"><img src="../Branche Arts/2024-2025/Apia-campagne.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    <a href="../Branche Arts/2024-2025/Aloow.png"><img src="../Branche Arts/2024-2025/Aloow.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    </div><div class="galerie">    
-    <a href="../Branche Arts/2024-2025/Banière-2024.png"><img src="../Branche Arts/2024-2025/Banière-2024.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    <a href="../Branche Arts/2024-2025/CMJN.png"><img src="../Branche Arts/2024-2025/CMJN.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    <a href="../Branche Arts/2024-2025/RGB.png"><img src="../Branche Arts/2024-2025/RGB.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    <a href="../Branche Arts/2024-2025/Géo.png"><img src="../Branche Arts/2024-2025/Géo.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    <a href="../Branche Arts/2024-2025/Art-1.png"><img src="../Branche Arts/2024-2025/Art-1.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    </div><div class="galerie">    
-    <a href="../Branche Arts/2024-2025/Plateau de jeu.png"><img src="../Branche Arts/2024-2025/Plateau de jeu.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    <a href="../Branche Arts/2024-2025/France.png"><img src="../Branche Arts/2024-2025/France.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    <a href="../Branche Arts/2024-2025/Laser.png"><img src="../Branche Arts/2024-2025/Laser.png" style="filter: brightness(4);" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    <a href="../Branche Arts/2024-2025/Redstar2.png"><img src="../Branche Arts/2024-2025/Redstar2.png" style="filter: brightness(4);" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    <a href="../Branche Arts/2024-2025/Newsalce.png"><img src="../Branche Arts/2024-2025/Newsalce.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    </div><div class="galerie">    
-    <a href="../Branche Arts/2024-2025/QR-Code.png"><img src="../Branche Arts/2024-2025/QR-Code.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    <a href="../Branche Arts/2024-2025/CMJB.png"><img src="../Branche Arts/2024-2025/CMJB.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    <a href="../Branche Arts/2024-2025/Mexisun.png"><img src="../Branche Arts/2024-2025/Mexisun.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    <a href="../Branche Arts/2024-2025/OOOO.png"><img src="../Branche Arts/2024-2025/OOOO.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    <a href="../Branche Arts/2024-2025/R.png"><img src="../Branche Arts/2024-2025/R.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
-    </div>
+    <header>
+        <ul class="lien-barre">
+            <li><a href="./2021-2022.html">2021-2022</a></li>
+            <li><a href="./2022-2023.html">2022-2023</a></li>
+            <li><a href="./2023-2024.html">2023-2024</a></li>
+            <li><a href="./2024-2025.html">2024-2025</a></li>
+            <li><a href="./Personelle.html">Personelle</a></li>
+            <li><a href="./Logo + 3D.html">Logo + 3D</a></li>
+            <li><a href="../index.html">Retour</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <div class="galerie">
+        <a href="../Branche Arts/2024-2025/Redverse.png"><img src="../Branche Arts/2024-2025/Redverse.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
+        <a href="../Branche Arts/2024-2025/OSTitre.png"><img src="../Branche Arts/2024-2025/OSTitre.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
+        <a href="../Branche Arts/2024-2025/JAPON.png"><img src="../Branche Arts/2024-2025/JAPON.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>   
+        <a href="../Branche Arts/2024-2025/Apia-campagne.png"><img src="../Branche Arts/2024-2025/Apia-campagne.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
+        <a href="../Branche Arts/2024-2025/Aloow.png"><img src="../Branche Arts/2024-2025/Aloow.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
+        </div><div class="galerie">    
+        <a href="../Branche Arts/2024-2025/Banière-2024.png"><img src="../Branche Arts/2024-2025/Banière-2024.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
+        <a href="../Branche Arts/2024-2025/CMJN.png"><img src="../Branche Arts/2024-2025/CMJN.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
+        <a href="../Branche Arts/2024-2025/RGB.png"><img src="../Branche Arts/2024-2025/RGB.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
+        <a href="../Branche Arts/2024-2025/Géo.png"><img src="../Branche Arts/2024-2025/Géo.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
+        <a href="../Branche Arts/2024-2025/Art-1.png"><img src="../Branche Arts/2024-2025/Art-1.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
+        </div><div class="galerie">    
+        <a href="../Branche Arts/2024-2025/Plateau de jeu.png"><img src="../Branche Arts/2024-2025/Plateau de jeu.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
+        <a href="../Branche Arts/2024-2025/France.png"><img src="../Branche Arts/2024-2025/France.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
+        <a href="../Branche Arts/2024-2025/Laser.png"><img src="../Branche Arts/2024-2025/Laser.png" style="filter: brightness(4);" alt="Image" title="Cliquez pour agrandir ^^" /></a>
+        <a href="../Branche Arts/2024-2025/Redstar2.png"><img src="../Branche Arts/2024-2025/Redstar2.png" style="filter: brightness(4);" alt="Image" title="Cliquez pour agrandir ^^" /></a>
+        <a href="../Branche Arts/2024-2025/Newsalce.png"><img src="../Branche Arts/2024-2025/Newsalce.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
+        </div><div class="galerie">    
+        <a href="../Branche Arts/2024-2025/QR-Code.png"><img src="../Branche Arts/2024-2025/QR-Code.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
+        <a href="../Branche Arts/2024-2025/CMJB.png"><img src="../Branche Arts/2024-2025/CMJB.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
+        <a href="../Branche Arts/2024-2025/Mexisun.png"><img src="../Branche Arts/2024-2025/Mexisun.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
+        <a href="../Branche Arts/2024-2025/OOOO.png"><img src="../Branche Arts/2024-2025/OOOO.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
+        <a href="../Branche Arts/2024-2025/R.png"><img src="../Branche Arts/2024-2025/R.png" alt="Image" title="Cliquez pour agrandir ^^" /></a>
+        </div>
+    </main>
 </body>

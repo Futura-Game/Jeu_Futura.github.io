@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasard</title>
+    <link rel="website icon" type="png" href="./Bugatie.png">
+    <script>
+        function redirectionAleatoire() {
+            
+            const pages = [ // Permet de lister des lients //
+                "https://mario.fandom.com/fr/wiki/Super_Mario_3D_Land",
+                "https://professeur-layton.fandom.com/fr/wiki/Professeur_Layton_et_le_masque_des_miracles",
+                "https://fishingsimulator.fandom.com/wiki/Fishing_Simulator_Wiki",
+                "https://fallguysultimateknockout.fandom.com/wiki/Fall_Guys:_Ultimate_Knockout_Wiki",
+                "https://fr.minecraft.wiki/",
+                "https://epicmickey.fandom.com/wiki/Epic_Mickey_Wiki",
+                "https://squid-game.fandom.com/fr/wiki/Wiki_Squid_Game",
+                "https://oaklands.fandom.com/wiki/Oaklands_Wiki",
+                "https://abyssal.miraheze.org/wiki/Main_Page",
+                "https://www.europapark.de/fr",
+            ];
+
+            // Choisir une page au hasard //
+            const pageChoisie = pages[Math.floor(Math.random() * pages.length)];
+
+            // Rediriger vers la page choisie //
+            window.location.href = pageChoisie;
+        }
+    </script>
+    <style>
+        body {
+            background: url(./Lueur.jpg);
+            background-size: cover;      /* Remplit tout le bloc */
+            background-repeat: no-repeat;
+        }
+        button {
+            font-family: "Helvetica", monospace;
+            color: blue;
+            background-color: black;
+            border: 1px solid blue;
+            font-size: 50px;
+        }
+        div {
+            background-color: black;
+            border: 1px solid blue;
+        }
+        a:hover, a:not(:hover) {
+            color: blue;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <button onclick="redirectionAleatoire()">Redirection aléatoire</button>
+    <button><a href="./index.html">Retour</a></button>
+    
+    </div>
+</body>
+</body>
+</html>
